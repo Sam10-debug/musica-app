@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+ background: #1D2123;
+}
+.search-input{
+	background-image: url("../public/search.svg");
+	background-size: 20px;
+	background-repeat: no-repeat;
+	background-color:  #1D2123;
+}
+.search-input::placeholder{
+	padding-left: 28px;
+}
+.mini-text{
+	color: rgba(255, 255, 255, 0.5);
+}
+.rnb{
+	background-color: #609EAF;
+	background-image: url("/images/Vector1.png");
+	background-repeat: no-repeat;
+	background-position: right 0;
+}
+.top-chart-text{
+	color:  #EFEEE0;
+}
+.album-card-text{
+	color: rgba(255, 255, 255, 0.5);
+}
+@media screen and (max-width:768px){
+	.search-input::placeholder{
+		color: #1D2123;
+	}
+	.search-input{
+		background-position: right 0;
+	}
+	.rnb{
+		background-image: none;
+	}
+}
