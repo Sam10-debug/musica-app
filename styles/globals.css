@@ -23,11 +23,53 @@ body{
 	background-repeat: no-repeat;
 	background-position: right 0;
 }
+.yellow{
+	 background: #FACD66;
+}
+.ash{
+	 border: 1px solid #EFEEE0;
+}
+.close{
+	height: 50px;
+	width: 50px;
+}
+.firstCollection{
+	background-image: url("/images/Rectangle\ 26\ \(3\).png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.fourthCollection{
+	background-image: url("/images/Rectangle\ 26\ \(2\).png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.secondCollection{
+	background-image: url("/images/Rectangle\ 26\ \(1\).png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.thirdCollection{
+	background-image: url("/images/Rectangle\ 26.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.album{
+	background-color: #33373B;
+}
 .top-chart-text{
 	color:  #EFEEE0;
 }
 .album-card-text{
 	color: rgba(255, 255, 255, 0.5);
+}
+.tomorrow-tunes{
+	color: #A4C7C6;
+}
+.side-menu{
+	background-color: #1A1E1F;
+}
+.playlist{
+	background: rgba(255, 255, 255, 0.07);
 }
 @media screen and (max-width:768px){
 	.search-input::placeholder{
