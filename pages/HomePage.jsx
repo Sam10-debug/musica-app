@@ -2,10 +2,10 @@ import React from 'react'
 import Image from 'next/image'
 import { useContext } from 'react'
 import { DataContext } from '../context/DataContext'
-import MobileNav from './MobileNav'
+import Link from 'next/link'
 
 const HomePage = () => {
-	const {showMobileNav,setShowMobileNav}=useContext(DataContext)
+	const {setShowMobileNav}=useContext(DataContext)
 	console.log(setShowMobileNav)
   return (
 	<section className="px-4 pb-12">
@@ -40,111 +40,122 @@ const HomePage = () => {
 			<div className="md:hidden">
 				<h3 className="font-[24px] font-bold top-chart-text my-2">Top Charts</h3>
 				<div className=" whitespace-nowrap overflow-auto">
-					<div className=" inline-block bg-black relative p-2 rounded-xl">
-						<span className="block w-40 h-20 ">
-						<Image src="/images/Rectangle 17.png" width={70} height={70} alt="" />
-							<svg width="18" className=' absolute right-2 top-2' height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path fill-rule="evenodd" clip-rule="evenodd" d="M2.15388 8.69874C1.34913 6.18624 2.28963 3.31449 4.92738 2.46474C6.31488 2.01699 7.84638 2.28099 8.99988 3.14874C10.0911 2.30499 11.6789 2.01999 13.0649 2.46474C15.7026 3.31449 16.6491 6.18624 15.8451 8.69874C14.5926 12.6812 8.99988 15.7487 8.99988 15.7487C8.99988 15.7487 3.44838 12.7277 2.15388 8.69874Z" stroke="#FACD66" stroke-width="0.5625" stroke-linecap="round" stroke-linejoin="round"/>
-							<path opacity="0.4" d="M12 5.02501C12.8025 5.28451 13.3695 6.00076 13.4377 6.84151" stroke="#FACD66" stroke-width="0.5625" stroke-linecap="round" stroke-linejoin="round"/>
-							</svg>
-
-						</span>
-						<div className="">
-							<h5 className="text-[17px] text-white leading-[120%]">Golden Age of 80s</h5>
-							<p className="text-[12px] leading-[120%] mini-text">Sean Swadder</p>
-							<span className="text-[12px] leading-[120%] text-white">2:34:45</span>
-						</div>
-					</div>
-					
-					<div className=" inline-block bg-black relative p-2 mx-2 rounded-xl">
-						<span className="block w-40 h-20 ">
-						<Image src="/images/Rectangle 17.png" width={70} height={70} alt="" />
-							<svg width="18" className=' absolute right-2 top-2' height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path fill-rule="evenodd" clip-rule="evenodd" d="M2.15388 8.69874C1.34913 6.18624 2.28963 3.31449 4.92738 2.46474C6.31488 2.01699 7.84638 2.28099 8.99988 3.14874C10.0911 2.30499 11.6789 2.01999 13.0649 2.46474C15.7026 3.31449 16.6491 6.18624 15.8451 8.69874C14.5926 12.6812 8.99988 15.7487 8.99988 15.7487C8.99988 15.7487 3.44838 12.7277 2.15388 8.69874Z" stroke="#FACD66" stroke-width="0.5625" stroke-linecap="round" stroke-linejoin="round"/>
-							<path opacity="0.4" d="M12 5.02501C12.8025 5.28451 13.3695 6.00076 13.4377 6.84151" stroke="#FACD66" stroke-width="0.5625" stroke-linecap="round" stroke-linejoin="round"/>
-							</svg>
-
-						</span>
-						<div className="">
-							<h5 className="text-[17px] text-white leading-[120%]">Golden Age of 80s</h5>
-							<p className="text-[12px] leading-[120%] mini-text">Sean Swadder</p>
-							<span className="text-[12px] leading-[120%] text-white">2:34:45</span>
-						</div>
-					</div>
-					
-					<div className=" inline-block bg-black relative p-2 rounded-xl">
-						<span className="block w-40 h-20 ">
-							
+					<Link href="/">
+						<div className=" inline-block bg-black relative p-2 rounded-xl">
+							<span className="block w-40 h-20 ">
 							<Image src="/images/Rectangle 17.png" width={70} height={70} alt="" />
-							<svg width="18" className=' absolute right-2 top-2' height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path fill-rule="evenodd" clip-rule="evenodd" d="M2.15388 8.69874C1.34913 6.18624 2.28963 3.31449 4.92738 2.46474C6.31488 2.01699 7.84638 2.28099 8.99988 3.14874C10.0911 2.30499 11.6789 2.01999 13.0649 2.46474C15.7026 3.31449 16.6491 6.18624 15.8451 8.69874C14.5926 12.6812 8.99988 15.7487 8.99988 15.7487C8.99988 15.7487 3.44838 12.7277 2.15388 8.69874Z" stroke="#FACD66" stroke-width="0.5625" stroke-linecap="round" stroke-linejoin="round"/>
-							<path opacity="0.4" d="M12 5.02501C12.8025 5.28451 13.3695 6.00076 13.4377 6.84151" stroke="#FACD66" stroke-width="0.5625" stroke-linecap="round" stroke-linejoin="round"/>
-							</svg>
+								<svg width="18" className=' absolute right-2 top-2' height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M2.15388 8.69874C1.34913 6.18624 2.28963 3.31449 4.92738 2.46474C6.31488 2.01699 7.84638 2.28099 8.99988 3.14874C10.0911 2.30499 11.6789 2.01999 13.0649 2.46474C15.7026 3.31449 16.6491 6.18624 15.8451 8.69874C14.5926 12.6812 8.99988 15.7487 8.99988 15.7487C8.99988 15.7487 3.44838 12.7277 2.15388 8.69874Z" stroke="#FACD66" stroke-width="0.5625" stroke-linecap="round" stroke-linejoin="round"/>
+								<path opacity="0.4" d="M12 5.02501C12.8025 5.28451 13.3695 6.00076 13.4377 6.84151" stroke="#FACD66" stroke-width="0.5625" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
 
-						</span>
-						<div className="">
-							<h5 className="text-[17px] text-white leading-[120%]">Golden Age of 80s</h5>
-							<p className="text-[12px] leading-[120%] mini-text">Sean Swadder</p>
-							<span className="text-[12px] leading-[120%] text-white">2:34:45</span>
+							</span>
+							<div className="">
+								<h5 className="text-[17px] text-white leading-[120%]">Golden Age of 80s</h5>
+								<p className="text-[12px] leading-[120%] mini-text">Sean Swadder</p>
+								<span className="text-[12px] leading-[120%] text-white">2:34:45</span>
+							</div>
 						</div>
-					</div>
+					</Link>
+					<Link href="/viewchart">
+						<div className=" inline-block bg-black relative p-2 mx-2 rounded-xl">
+							<span className="block w-40 h-20 ">
+							<Image src="/images/Rectangle 17.png" width={70} height={70} alt="" />
+								<svg width="18" className=' absolute right-2 top-2' height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M2.15388 8.69874C1.34913 6.18624 2.28963 3.31449 4.92738 2.46474C6.31488 2.01699 7.84638 2.28099 8.99988 3.14874C10.0911 2.30499 11.6789 2.01999 13.0649 2.46474C15.7026 3.31449 16.6491 6.18624 15.8451 8.69874C14.5926 12.6812 8.99988 15.7487 8.99988 15.7487C8.99988 15.7487 3.44838 12.7277 2.15388 8.69874Z" stroke="#FACD66" stroke-width="0.5625" stroke-linecap="round" stroke-linejoin="round"/>
+								<path opacity="0.4" d="M12 5.02501C12.8025 5.28451 13.3695 6.00076 13.4377 6.84151" stroke="#FACD66" stroke-width="0.5625" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+
+							</span>
+							<div className="">
+								<h5 className="text-[17px] text-white leading-[120%]">Golden Age of 80s</h5>
+								<p className="text-[12px] leading-[120%] mini-text">Sean Swadder</p>
+								<span className="text-[12px] leading-[120%] text-white">2:34:45</span>
+							</div>
+						</div>
+					</Link>
+					
+					<Link href="/collections">
+						<div className=" inline-block bg-black relative p-2 rounded-xl">
+							<span className="block w-40 h-20 ">
+								
+								<Image src="/images/Rectangle 17.png" width={70} height={70} alt="" />
+								<svg width="18" className=' absolute right-2 top-2' height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M2.15388 8.69874C1.34913 6.18624 2.28963 3.31449 4.92738 2.46474C6.31488 2.01699 7.84638 2.28099 8.99988 3.14874C10.0911 2.30499 11.6789 2.01999 13.0649 2.46474C15.7026 3.31449 16.6491 6.18624 15.8451 8.69874C14.5926 12.6812 8.99988 15.7487 8.99988 15.7487C8.99988 15.7487 3.44838 12.7277 2.15388 8.69874Z" stroke="#FACD66" stroke-width="0.5625" stroke-linecap="round" stroke-linejoin="round"/>
+								<path opacity="0.4" d="M12 5.02501C12.8025 5.28451 13.3695 6.00076 13.4377 6.84151" stroke="#FACD66" stroke-width="0.5625" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+
+							</span>
+							<div className="">
+								<h5 className="text-[17px] text-white leading-[120%]">Golden Age of 80s</h5>
+								<p className="text-[12px] leading-[120%] mini-text">Sean Swadder</p>
+								<span className="text-[12px] leading-[120%] text-white">2:34:45</span>
+							</div>
+						</div>
+					</Link>
 					
 				</div>
 			</div>
 			<div className="hidden md:block md:w-[40%]">
 					<h3 className="text-[24px] top-chart-text">Top Charts</h3>
 					<div className=" md:w-full lmao  gap-x-8 flex  overflow-hidden  md:flex-col justify-between md:h-[320px]">
-					<div className="flex w-[323px]  md:w-full justify-between bg-black rounded-md p-4 h-[233px] md:h-[96px]">
-						<div className="flex">
-							<Image src="/images/Rectangle 17.png" width={50} height={50} alt='top-chart-image' />
-							<div className="ml-4">
-								<h5 className="text-[17px] leading-[120%] my-2 md:my-0 text-white">Golden Age of 80s</h5>
-								<p className="mini-text text-[12px] my-4 md:my-0 leading-[120%]">Sean swadder</p>
-								<p className="text-[14px] leading-[120%] text-white">2:34:45</p>
+					<Link href="/">
+						<div className="flex w-[323px]  md:w-full justify-between bg-black rounded-md p-4 h-[233px] md:h-[96px]">
+							<div className="flex">
+								<Image src="/images/Rectangle 17.png" width={50} height={50} alt='top-chart-image' />
+								<div className="ml-4">
+									<h5 className="text-[17px] leading-[120%] my-2 md:my-0 text-white">Golden Age of 80s</h5>
+									<p className="mini-text text-[12px] my-4 md:my-0 leading-[120%]">Sean swadder</p>
+									<p className="text-[14px] leading-[120%] text-white">2:34:45</p>
+								</div>
+							</div>
+							<div className="">
+							<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M2.15388 8.69874C1.34913 6.18624 2.28963 3.31449 4.92738 2.46474C6.31488 2.01699 7.84638 2.28099 8.99988 3.14874C10.0911 2.30499 11.6789 2.01999 13.0649 2.46474C15.7026 3.31449 16.6491 6.18624 15.8451 8.69874C14.5926 12.6812 8.99988 15.7487 8.99988 15.7487C8.99988 15.7487 3.44838 12.7277 2.15388 8.69874Z" stroke="#FACD66" stroke-width="0.5625" stroke-linecap="round" stroke-linejoin="round"/>
+							<path opacity="0.4" d="M12 5.02501C12.8025 5.28451 13.3695 6.00076 13.4377 6.84151" stroke="#FACD66" stroke-width="0.5625" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+
 							</div>
 						</div>
-						<div className="">
-						<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path fill-rule="evenodd" clip-rule="evenodd" d="M2.15388 8.69874C1.34913 6.18624 2.28963 3.31449 4.92738 2.46474C6.31488 2.01699 7.84638 2.28099 8.99988 3.14874C10.0911 2.30499 11.6789 2.01999 13.0649 2.46474C15.7026 3.31449 16.6491 6.18624 15.8451 8.69874C14.5926 12.6812 8.99988 15.7487 8.99988 15.7487C8.99988 15.7487 3.44838 12.7277 2.15388 8.69874Z" stroke="#FACD66" stroke-width="0.5625" stroke-linecap="round" stroke-linejoin="round"/>
-						<path opacity="0.4" d="M12 5.02501C12.8025 5.28451 13.3695 6.00076 13.4377 6.84151" stroke="#FACD66" stroke-width="0.5625" stroke-linecap="round" stroke-linejoin="round"/>
-						</svg>
+					</Link>
+					<Link href="/viewchart">
+						<div className="flex w-[323px] md:w-full justify-between bg-black rounded-md p-4 h-[233px] md:h-[96px]">
+							<div className="flex">
+								<Image src="/images/Rectangle 17 (1).png" width={50} height={50} alt='top-chart-image' />
+								<div className="ml-4">
+									<h5 className="text-[17px] leading-[120%] text-white">Reggae &apos;n&apos; blues</h5>
+									<p className="mini-text text-[12px] leading-[120%]">DJ YK Mule</p>
+									<p className="text-[14px] leading-[120%] text-white">1:02:42</p>
+								</div>
+							</div>
+							<div className="">
+							<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M2.15388 8.69874C1.34913 6.18624 2.28963 3.31449 4.92738 2.46474C6.31488 2.01699 7.84638 2.28099 8.99988 3.14874C10.0911 2.30499 11.6789 2.01999 13.0649 2.46474C15.7026 3.31449 16.6491 6.18624 15.8451 8.69874C14.5926 12.6812 8.99988 15.7487 8.99988 15.7487C8.99988 15.7487 3.44838 12.7277 2.15388 8.69874Z" stroke="#FACD66" stroke-width="0.5625" stroke-linecap="round" stroke-linejoin="round"/>
+							<path opacity="0.4" d="M12 5.02501C12.8025 5.28451 13.3695 6.00076 13.4377 6.84151" stroke="#FACD66" stroke-width="0.5625" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
 
-						</div>
-					</div>
-					<div className="flex w-[323px] md:w-full justify-between bg-black rounded-md p-4 h-[233px] md:h-[96px]">
-						<div className="flex">
-							<Image src="/images/Rectangle 17 (1).png" width={50} height={50} alt='top-chart-image' />
-							<div className="ml-4">
-								<h5 className="text-[17px] leading-[120%] text-white">Reggae &apos;n&apos; blues</h5>
-								<p className="mini-text text-[12px] leading-[120%]">DJ YK Mule</p>
-								<p className="text-[14px] leading-[120%] text-white">1:02:42</p>
 							</div>
 						</div>
-						<div className="">
-						<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path fill-rule="evenodd" clip-rule="evenodd" d="M2.15388 8.69874C1.34913 6.18624 2.28963 3.31449 4.92738 2.46474C6.31488 2.01699 7.84638 2.28099 8.99988 3.14874C10.0911 2.30499 11.6789 2.01999 13.0649 2.46474C15.7026 3.31449 16.6491 6.18624 15.8451 8.69874C14.5926 12.6812 8.99988 15.7487 8.99988 15.7487C8.99988 15.7487 3.44838 12.7277 2.15388 8.69874Z" stroke="#FACD66" stroke-width="0.5625" stroke-linecap="round" stroke-linejoin="round"/>
-						<path opacity="0.4" d="M12 5.02501C12.8025 5.28451 13.3695 6.00076 13.4377 6.84151" stroke="#FACD66" stroke-width="0.5625" stroke-linecap="round" stroke-linejoin="round"/>
-						</svg>
+					</Link>
+					<Link href="/collections">
+						<div className="flex w-[323px] md:w-full justify-between bg-black rounded-md p-4 h-[233px] md:h-[96px]">
+							<div className="flex">
+								<Image src="/images/Rectangle 17.png" width={50} height={50} alt='top-chart-image' />
+								<div className="ml-4">
+									<h5 className="text-[17px] leading-[120%] text-white">Tommorow&apos;s tunes</h5>
+									<p className="mini-text text-[12px] leading-[120%]">Obi Datti</p>
+									<p className="text-[14px] leading-[120%] text-white">2:01:25</p>
+								</div>
+							</div>
+							<div className="">
+							<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M2.15388 8.69874C1.34913 6.18624 2.28963 3.31449 4.92738 2.46474C6.31488 2.01699 7.84638 2.28099 8.99988 3.14874C10.0911 2.30499 11.6789 2.01999 13.0649 2.46474C15.7026 3.31449 16.6491 6.18624 15.8451 8.69874C14.5926 12.6812 8.99988 15.7487 8.99988 15.7487C8.99988 15.7487 3.44838 12.7277 2.15388 8.69874Z" stroke="#FACD66" stroke-width="0.5625" stroke-linecap="round" stroke-linejoin="round"/>
+							<path opacity="0.4" d="M12 5.02501C12.8025 5.28451 13.3695 6.00076 13.4377 6.84151" stroke="#FACD66" stroke-width="0.5625" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
 
-						</div>
-					</div>
-					<div className="flex w-[323px] md:w-full justify-between bg-black rounded-md p-4 h-[233px] md:h-[96px]">
-						<div className="flex">
-							<Image src="/images/Rectangle 17.png" width={50} height={50} alt='top-chart-image' />
-							<div className="ml-4">
-								<h5 className="text-[17px] leading-[120%] text-white">Tommorow&apos;s tunes</h5>
-								<p className="mini-text text-[12px] leading-[120%]">Obi Datti</p>
-								<p className="text-[14px] leading-[120%] text-white">2:01:25</p>
 							</div>
 						</div>
-						<div className="">
-						<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path fill-rule="evenodd" clip-rule="evenodd" d="M2.15388 8.69874C1.34913 6.18624 2.28963 3.31449 4.92738 2.46474C6.31488 2.01699 7.84638 2.28099 8.99988 3.14874C10.0911 2.30499 11.6789 2.01999 13.0649 2.46474C15.7026 3.31449 16.6491 6.18624 15.8451 8.69874C14.5926 12.6812 8.99988 15.7487 8.99988 15.7487C8.99988 15.7487 3.44838 12.7277 2.15388 8.69874Z" stroke="#FACD66" stroke-width="0.5625" stroke-linecap="round" stroke-linejoin="round"/>
-						<path opacity="0.4" d="M12 5.02501C12.8025 5.28451 13.3695 6.00076 13.4377 6.84151" stroke="#FACD66" stroke-width="0.5625" stroke-linecap="round" stroke-linejoin="round"/>
-						</svg>
-
-						</div>
-					</div>
+					</Link>
 					</div>
 				</div>
 		</section>
