@@ -9,7 +9,7 @@ const MobileNav = () => {
 	}
   return (
 	<section className="md:hidden w-screen  h-screen flex pt-16 justify-center side-menu sticky top-0 z-10 left-0">
-		<svg version="1.1" onClick={hideNav}  id="图层_1" className='close absolute top-0 left-0 cursor-pointer' xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+		<svg version="1.1" onClick={hideNav} className='close absolute top-0 left-0 cursor-pointer' xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 40 40" enable-background="new 0 0 40 40" xmlSpace="preserve">
 <g>
 	<g>
