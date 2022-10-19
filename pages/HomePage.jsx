@@ -11,7 +11,7 @@ const HomePage = () => {
 	<section className="px-4 pb-12">
 		<section className="md:flex justify-between">
 			
-			<div className="rnb md:flex h-[503px] md:h-[373px] p-4 rounded-xl relative md:w-[50%]">
+			<div className="rnb md:flex h-[600px] md:h-[373px] p-4 rounded-xl relative md:w-[50%]">
 					<div className="absolute right-0 md:hidden">
 						<Image src="/images/Vector.png" alt="" width={250} height={250}   />
 					</div>
@@ -41,8 +41,8 @@ const HomePage = () => {
 				<h3 className="font-[24px] font-bold top-chart-text my-2">Top Charts</h3>
 				<div className=" whitespace-nowrap overflow-auto">
 					<Link href="/">
-						<div className=" inline-block bg-black relative p-2 rounded-xl">
-							<span className="block w-40 h-20 ">
+						<div className="w-4/5 inline-block bg-black relative p-2 rounded-xl">
+							<span className="block w-full h-20 ">
 							<Image src="/images/Rectangle 17.png" width={70} height={70} alt="" />
 								<svg width="18" className=' absolute right-2 top-2' height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path fill-rule="evenodd" clip-rule="evenodd" d="M2.15388 8.69874C1.34913 6.18624 2.28963 3.31449 4.92738 2.46474C6.31488 2.01699 7.84638 2.28099 8.99988 3.14874C10.0911 2.30499 11.6789 2.01999 13.0649 2.46474C15.7026 3.31449 16.6491 6.18624 15.8451 8.69874C14.5926 12.6812 8.99988 15.7487 8.99988 15.7487C8.99988 15.7487 3.44838 12.7277 2.15388 8.69874Z" stroke="#FACD66" stroke-width="0.5625" stroke-linecap="round" stroke-linejoin="round"/>
@@ -58,8 +58,8 @@ const HomePage = () => {
 						</div>
 					</Link>
 					<Link href="/viewchart">
-						<div className=" inline-block bg-black relative p-2 mx-2 rounded-xl">
-							<span className="block w-40 h-20 ">
+						<div className="w-4/5 inline-block bg-black relative p-2 mx-2 rounded-xl">
+							<span className="block w-full h-20 ">
 							<Image src="/images/Rectangle 17.png" width={70} height={70} alt="" />
 								<svg width="18" className=' absolute right-2 top-2' height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path fill-rule="evenodd" clip-rule="evenodd" d="M2.15388 8.69874C1.34913 6.18624 2.28963 3.31449 4.92738 2.46474C6.31488 2.01699 7.84638 2.28099 8.99988 3.14874C10.0911 2.30499 11.6789 2.01999 13.0649 2.46474C15.7026 3.31449 16.6491 6.18624 15.8451 8.69874C14.5926 12.6812 8.99988 15.7487 8.99988 15.7487C8.99988 15.7487 3.44838 12.7277 2.15388 8.69874Z" stroke="#FACD66" stroke-width="0.5625" stroke-linecap="round" stroke-linejoin="round"/>
@@ -76,8 +76,8 @@ const HomePage = () => {
 					</Link>
 					
 					<Link href="/collections">
-						<div className=" inline-block bg-black relative p-2 rounded-xl">
-							<span className="block w-40 h-20 ">
+						<div className="w-4/5 inline-block bg-black relative p-2 rounded-xl">
+							<span className="block w-full h-20 ">
 								
 								<Image src="/images/Rectangle 17.png" width={70} height={70} alt="" />
 								<svg width="18" className=' absolute right-2 top-2' height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -160,7 +160,7 @@ const HomePage = () => {
 				</div>
 		</section>
 		<section className="w-full flex justify-start md:mt-12">
-		<section className="w-[90%] ">
+		<section className="w-full md:w-[90%] ">
 			<h3 className="top-chart-text text-[24px] leading-[120%] font-bold my-2 mx-2 md:mx-6">New releases.</h3>
 				<div className=" whitespace-nowrap overflow-auto cursor-pointer ">
 					<div className=" inline-block mx-2 md:mx-6 w-40 h-[160px]">
