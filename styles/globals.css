@@ -29,6 +29,9 @@ body{
 .ash{
 	 border: 1px solid #EFEEE0;
 }
+.heart:hover{
+	fill:#FACD66;
+}
 .close{
 	height: 50px;
 	width: 50px;
