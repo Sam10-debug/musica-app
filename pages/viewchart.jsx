@@ -1,10 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
-import { useContext } from 'react'
-import { DataContext } from '../context/DataContext'
-import MobileNav from './MobileNav'
-const Viewchart = () => {
-	const {showMobileNav,setShowMobileNav}=useContext(DataContext)
+
+const viewchart = () => {
   return (
 	<section className="px-4 overflow-x-hidden">
 		<div className="flex flex-col md:flex-row md:gap-x-4">
@@ -156,4 +153,4 @@ const Viewchart = () => {
   )
 }
 
-export default Viewchart
+export default viewchart
