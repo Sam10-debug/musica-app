@@ -12,8 +12,9 @@ const HomePage = () => {
 		<section className="md:flex justify-between">
 			
 			<div className="rnb md:flex h-[503px] md:h-[373px] p-4 rounded-xl relative md:w-[50%]">
-					<img src="/images/Vector.png" alt="" className="absolute right-0 md:hidden" />
-					{/* <img src="/images/Vector1.png" alt="" className="absolute right-0 hidden md:block top-0 -z-9" /> */}
+					<div className="absolute right-0 md:hidden">
+						<Image src="/images/Vector.png" alt="" width={250} height={250}   />
+					</div>
 					<div className="flex flex-col justify-between h-full">
 					<h6 className="text-[12px] text-white ">Curated Playlist</h6>
 					<div className="">
@@ -33,7 +34,7 @@ const HomePage = () => {
 					</div>
 				</div>
 				<div className="hidden md:block">
-					<img src="/images/Pexels Photo by Eric Esma (1).png" alt="" />
+					<Image src="/images/Pexels Photo by Eric Esma (1).png" width={500} height={500} alt="" />
 				</div>
 			</div>
 			<div className="md:hidden">
@@ -41,7 +42,7 @@ const HomePage = () => {
 				<div className=" whitespace-nowrap overflow-auto">
 					<div className=" inline-block bg-black relative p-2 rounded-xl">
 						<span className="block w-40 h-20 ">
-							<img src="images/Rectangle 17.png" alt="" />
+						<Image src="/images/Rectangle 17.png" width={70} height={70} alt="" />
 							<svg width="18" className=' absolute right-2 top-2' height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path fill-rule="evenodd" clip-rule="evenodd" d="M2.15388 8.69874C1.34913 6.18624 2.28963 3.31449 4.92738 2.46474C6.31488 2.01699 7.84638 2.28099 8.99988 3.14874C10.0911 2.30499 11.6789 2.01999 13.0649 2.46474C15.7026 3.31449 16.6491 6.18624 15.8451 8.69874C14.5926 12.6812 8.99988 15.7487 8.99988 15.7487C8.99988 15.7487 3.44838 12.7277 2.15388 8.69874Z" stroke="#FACD66" stroke-width="0.5625" stroke-linecap="round" stroke-linejoin="round"/>
 							<path opacity="0.4" d="M12 5.02501C12.8025 5.28451 13.3695 6.00076 13.4377 6.84151" stroke="#FACD66" stroke-width="0.5625" stroke-linecap="round" stroke-linejoin="round"/>
@@ -57,7 +58,7 @@ const HomePage = () => {
 					
 					<div className=" inline-block bg-black relative p-2 mx-2 rounded-xl">
 						<span className="block w-40 h-20 ">
-							<img src="images/Rectangle 17.png" alt="" />
+						<Image src="/images/Rectangle 17.png" width={70} height={70} alt="" />
 							<svg width="18" className=' absolute right-2 top-2' height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path fill-rule="evenodd" clip-rule="evenodd" d="M2.15388 8.69874C1.34913 6.18624 2.28963 3.31449 4.92738 2.46474C6.31488 2.01699 7.84638 2.28099 8.99988 3.14874C10.0911 2.30499 11.6789 2.01999 13.0649 2.46474C15.7026 3.31449 16.6491 6.18624 15.8451 8.69874C14.5926 12.6812 8.99988 15.7487 8.99988 15.7487C8.99988 15.7487 3.44838 12.7277 2.15388 8.69874Z" stroke="#FACD66" stroke-width="0.5625" stroke-linecap="round" stroke-linejoin="round"/>
 							<path opacity="0.4" d="M12 5.02501C12.8025 5.28451 13.3695 6.00076 13.4377 6.84151" stroke="#FACD66" stroke-width="0.5625" stroke-linecap="round" stroke-linejoin="round"/>
@@ -73,7 +74,8 @@ const HomePage = () => {
 					
 					<div className=" inline-block bg-black relative p-2 rounded-xl">
 						<span className="block w-40 h-20 ">
-							<img src="images/Rectangle 17.png" alt="" />
+							
+							<Image src="/images/Rectangle 17.png" width={70} height={70} alt="" />
 							<svg width="18" className=' absolute right-2 top-2' height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path fill-rule="evenodd" clip-rule="evenodd" d="M2.15388 8.69874C1.34913 6.18624 2.28963 3.31449 4.92738 2.46474C6.31488 2.01699 7.84638 2.28099 8.99988 3.14874C10.0911 2.30499 11.6789 2.01999 13.0649 2.46474C15.7026 3.31449 16.6491 6.18624 15.8451 8.69874C14.5926 12.6812 8.99988 15.7487 8.99988 15.7487C8.99988 15.7487 3.44838 12.7277 2.15388 8.69874Z" stroke="#FACD66" stroke-width="0.5625" stroke-linecap="round" stroke-linejoin="round"/>
 							<path opacity="0.4" d="M12 5.02501C12.8025 5.28451 13.3695 6.00076 13.4377 6.84151" stroke="#FACD66" stroke-width="0.5625" stroke-linecap="round" stroke-linejoin="round"/>
@@ -151,37 +153,37 @@ const HomePage = () => {
 			<h3 className="top-chart-text text-[24px] leading-[120%] font-bold my-2 mx-2 md:mx-6">New releases.</h3>
 				<div className=" whitespace-nowrap overflow-auto cursor-pointer ">
 					<div className=" inline-block mx-2 md:mx-6 w-40 h-[160px]">
-						<img src="/images/Rectangle 14 (2).png" alt="" className="h-[160px] mb-2" />
+						<Image src="/images/Rectangle 14 (2).png" alt="" width={180} height={180} />
 						<h6 className="text-[12px] text-white">Everything black</h6>
 						<p className="font-[12px] album-card-text">The van</p>
 					</div>
 					<div className=" inline-block mx-2 md:mx-6 w-40 h-[160px]">
-						<img src="/images/Rectangle 14 (2).png" alt="" className="h-[160px] mb-2" />
+						<Image src="/images/Rectangle 14 (2).png" alt="" width={180} height={180} />
 						<h6 className="text-[12px] text-white">Everything black</h6>
 						<p className="font-[12px] album-card-text">The van</p>
 					</div>
 					<div className=" inline-block mx-2 md:mx-6 w-40 h-[160px]">
-						<img src="/images/Rectangle 14 (2).png" alt="" className="h-[160px] mb-2" />
+						<Image src="/images/Rectangle 14 (2).png" alt="" width={180} height={180} />
 						<h6 className="text-[12px] text-white">Everything black</h6>
 						<p className="font-[12px] album-card-text">The van</p>
 					</div>
 					<div className=" inline-block mx-2 md:mx-6 w-40 h-[160px]">
-						<img src="/images/Rectangle 14 (2).png" alt="" className="h-[160px] mb-2" />
+						<Image src="/images/Rectangle 14 (2).png" alt="" width={180} height={180} />
 						<h6 className="text-[12px] text-white">Everything black</h6>
 						<p className="font-[12px] album-card-text">The van</p>
 					</div>
 					<div className=" inline-block mx-2 md:mx-6 w-40 h-[160px]">
-						<img src="/images/Rectangle 14 (2).png" alt="" className="h-[160px] mb-2" />
+						<Image src="/images/Rectangle 14 (2).png" alt="" width={180} height={180} />
 						<h6 className="text-[12px] text-white">Everything black</h6>
 						<p className="font-[12px] album-card-text">The van</p>
 					</div>
 					<div className=" inline-block mx-2 md:mx-6 w-40 h-[160px]">
-						<img src="/images/Rectangle 14 (2).png" alt="" className="h-[160px] mb-2" />
+						<Image src="/images/Rectangle 14 (2).png" alt="" width={180} height={180} />
 						<h6 className="text-[12px] text-white">Everything black</h6>
 						<p className="font-[12px] album-card-text">The van</p>
 					</div>
 					<div className=" inline-block mx-2 md:mx-6 w-40 h-[160px]">
-						<img src="/images/Rectangle 14 (2).png" alt="" className="h-[160px] mb-2" />
+						<Image src="/images/Rectangle 14 (2).png" alt="" width={180} height={180} />
 						<h6 className="text-[12px] text-white">Everything black</h6>
 						<p className="font-[12px] album-card-text">The van</p>
 					</div>
