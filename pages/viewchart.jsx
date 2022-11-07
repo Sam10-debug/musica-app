@@ -6,7 +6,7 @@ const viewchart = () => {
 	<section className="px-4 overflow-x-hidden">
 		<div className="flex flex-col md:flex-row md:gap-x-4">
 			<div className="relative w-full md:w-[357px] h-[289px]">
-				<Image src="/images/Rectangle 17 (2).png"  layout='fill' alt='tomorrow-tunes-picture'/>
+				<Image src="/images/Rectangle 14 (3).png"  layout='fill' alt='tomorrow-tunes-picture'/>
 			</div>
 			<div className="md:flex flex-col md:justify-center ">
 				<h2 className="text-[35px] leading-[120%] tomorrow-tunes my-2">Tomorrow&apos;s tunes</h2>
