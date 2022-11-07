@@ -1,6 +1,6 @@
 import Head from 'next/head'
 
-import HomePage from './homePage'
+import HomePage from './HomePage'
 
 export default function Home({data}) {
   console.log(data)
