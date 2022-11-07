@@ -1,10 +1,8 @@
 import React from 'react'
-import { useContext } from 'react'
-import { DataContext } from '../context/DataContext'
+import {useData} from "../context/DataContext"
 
 const Nav = () => {
-	const {showMobileNav,setShowMobileNav}=useContext(DataContext)
-	console.log(showMobileNav) 
+	const {setShowMobileNav}=useData()
 	const showNav=()=>{
 		setShowMobileNav(true)
 	}
@@ -12,9 +10,9 @@ const Nav = () => {
 	<header className="flex sticky top-0 justify-between md:justify-start md:gap-x-8 items-center p-4">
 		<nav className="flex gap-x-2">
 		<svg width="24" height="24" onClick={showNav} className='md:hidden z-auto mr-2' viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-		<g clip-path="url(#clip0_107_495)">
-		<path d="M4 8H20" stroke="#EFEEE0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-		<path d="M4 16H20" stroke="#EFEEE0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+		<g clipPath="url(#clip0_107_495)">
+		<path d="M4 8H20" stroke="#EFEEE0" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+		<path d="M4 16H20" stroke="#EFEEE0" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
 		</g>
 		<defs>
 		<clipPath id="clip0_107_495">

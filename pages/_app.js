@@ -1,12 +1,11 @@
 import '../styles/globals.css'
-import Layout from './Layout'
-import { DataContext } from '../context/DataContext'
-import { useState } from 'react'
+import Layout from "../components/Layout"
+import { Dataget } from '../context/DataContext'
 
 function MyApp({ Component, pageProps }) {
-  const [showMobileNav,setShowMobileNav]=useState(false)
+
  
-  return  <DataContext.Provider value={{showMobileNav,setShowMobileNav}}><Layout><Component {...pageProps} /></Layout></DataContext.Provider >
+  return  <Dataget ><Layout><Component {...pageProps} /></Layout></Dataget >
 }
 
 export default MyApp

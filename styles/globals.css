@@ -23,6 +23,15 @@ body{
 	background-repeat: no-repeat;
 	background-position: right 0;
 }
+.music-footer{
+	box-shadow: 0px -25px 100px 0px #10101082;
+	filter: drop-shadow(0px -25px 100px rgba(16, 16, 16, 0.51));
+	background: linear-gradient(0deg, rgba(29, 33, 35, 0.3), rgba(29, 33, 35, 0.3)),
+	linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+	border: 1px solid #FFFFFF1A;
+
+}
+
 .yellow{
 	 background: #FACD66;
 }
@@ -85,3 +94,24 @@ body{
 		background-image: none;
 	}
 }
+
+.myinput {
+	background: linear-gradient(to right, #FACD66 0%, #FACD66 100%, #fff 50%, #fff 100%);
+	border: solid 1px #FACD66;
+	border-radius: 8px;
+	height: 7px;
+	width: 100%;
+	outline: none;
+	transition: background 450ms ease-in;
+	-webkit-appearance: none;
+  }
+  .volume-input{
+	background: linear-gradient(to right, #FACD66 0%, #FACD66 100%, #fff 50%, #fff 100%);
+	border: solid 1px #FACD66;
+	border-radius: 8px;
+	height: 7px;
+	width: 90%;
+	outline: none;
+	transition: background 450ms ease-in;
+	-webkit-appearance: none;
+  }
