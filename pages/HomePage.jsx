@@ -1,11 +1,13 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useData } from '../context/DataContext'
 
 
 
 
-const HomePage = () => {
+const HomePage = ({data}) => {
+	// console.log(data)
 
   return (
 	<section className="px-4 ">
@@ -216,7 +218,13 @@ const HomePage = () => {
 
 
 export default HomePage
-
-
-  
+export async function getStaticProps() {
+	const res = await fetch("https://musica-api.up.railway.app/new")
+	const data = await res.json()
+	return {
+	  props: {
+		data,
+	  }, // will be passed to the page component as props
+	}
+  }
   

@@ -1,7 +1,8 @@
 import React from 'react'
 import Image from 'next/image'
 
-const viewchart = () => {
+const Viewchart = ({data}) => {
+	console.log(data)
   return (
 	<section className="px-4 overflow-x-hidden">
 		<div className="flex flex-col md:flex-row md:gap-x-4">
@@ -153,4 +154,13 @@ const viewchart = () => {
   )
 }
 
-export default viewchart
+export default Viewchar
+export async function getStaticProps() {
+	const res = await fetch("https://musica-api.up.railway.app/new")
+	const data = await res.json()
+	return {
+	  props: {
+		data,
+	  }, // will be passed to the page component as props
+	}
+  }
