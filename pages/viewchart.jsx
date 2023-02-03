@@ -154,7 +154,7 @@ const Viewchart = ({data}) => {
   )
 }
 
-export default Viewchar
+export default Viewchart
 export async function getStaticProps() {
 	const res = await fetch("https://musica-api.up.railway.app/new")
 	const data = await res.json()
